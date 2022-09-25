@@ -1,0 +1,60 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.cart {
+    border: 1px solid #fff;
+    width: 80%;
+    height: 95%;
+    overflow: scroll;
+    padding-top: 20px;
+    background-color: #fff;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    &__cost {
+        width: 300px;
+        background-color: lightgray;
+        margin: 5% 0 0 5%;
+        padding: 1rem;
+        font-style: italic;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+    &__btn {
+        width: 100px;
+        height: 50px;
+        margin: 3% 0 3% 5%;
+        padding: 10px;
+        border: none;
+        color: #fff;
+        background-color: blue;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+        &:hover {
+            background-color: rgb(33, 59, 131);
+        }
+    }
+    & h1 {
+        text-align: center;
+        margin-top: 80px;
+        font-size: 50px;
+        font-style: italic;
+    }
+}

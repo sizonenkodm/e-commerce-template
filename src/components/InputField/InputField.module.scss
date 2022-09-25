@@ -1,0 +1,27 @@
+.input {
+    width: 90%;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 16px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    &::placeholder {
+        font-size: 20px;
+    }
+}
+
+.error {
+    color: red;
+    &__message {
+        color: red;
+        font-size: 10px;
+    }
+    &__input {
+        color: red;
+        border-color: red;
+    }
+}

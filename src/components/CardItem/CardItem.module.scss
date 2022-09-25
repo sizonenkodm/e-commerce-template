@@ -1,0 +1,68 @@
+@mixin btnStyle($width, $height, $border, $color, $bc, $fz, $cursor, $br) {
+    width: $width;
+    height: $height;
+    border: $border;
+    color: $color;
+    background-color: $bc;
+    font-size: $fz;
+    cursor: $cursor;
+    -moz-border-radius: $br;
+    -webkit-border-radius: $br;
+    border-radius: $br;
+}
+
+.card {
+    border: 2px solid lightgray;
+    height: 270px;
+    padding-left: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__title {
+        text-align: center;
+    }
+    &__price {
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+    }
+    &__quantity {
+        width: 90%;
+        height: 50px;
+        margin: 0 auto;
+        font-size: 20px;
+        font-style: italic;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        & button {
+            @include btnStyle(25px, 25px, none, #fff, blue, 20px, pointer, 8px);
+            &:hover {
+                background-color: rgb(33, 59, 131);
+            }
+            &:disabled {
+                background-color: gray;
+                cursor: default;
+            }
+        }
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__btn {
+        @include btnStyle(30%, 30px, none, #fff, blue, 14px, pointer, 10px);
+        max-width: 80px;
+        &:hover {
+            background-color: rgb(33, 59, 131);
+        }
+        &:disabled {
+            background-color: gray;
+            cursor: default;
+        }
+    }
+}
