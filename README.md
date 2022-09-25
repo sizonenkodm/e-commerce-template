@@ -14,8 +14,8 @@ Main script for developing:
 
 Runs the app and the server in the development mode at the same time.\
 Open [http://localhost:3000](http://localhost:3000) to view app in your browser.
-Open [http://localhost:3001](http://localhost:3001/products) to view products data from db.json in your browser.
-Open [http://localhost:3001](http://localhost:3001/cart) to view cart data from db.json in your browser.
+Open [http://localhost:3001/products](http://localhost:3001/products) to view products data from db.json in your browser.
+Open [http://localhost:3001/cart](http://localhost:3001/cart) to view cart data from db.json in your browser.
 
 
 
@@ -37,8 +37,8 @@ You may also see any lint errors in the console.
 ### `npm run server`
 
 Runs the server.\
-Open [http://localhost:3001](http://localhost:3001/products) to view products data from db.json in your browser.
-Open [http://localhost:3001](http://localhost:3001/cart) to view cart data from db.json in your browser.
+Open [http://localhost:3001/products](http://localhost:3001/products) to view products data from db.json in your browser.
+Open [http://localhost:3001/cart](http://localhost:3001/cart) to view cart data from db.json in your browser.
 
 
 
